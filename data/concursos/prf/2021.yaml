@@ -1,0 +1,60 @@
+id: prf-2021
+orgao:
+  sigla: PRF
+  nome: Polícia Rodoviária Federal
+  esfera: federal
+edicao: 2021
+banca: Cebraspe
+situacao: realizado
+pagina_oficial: https://www.cebraspe.org.br/concursos/prf_21
+datas:
+  edital: 2021-01-19
+  prova_objetiva: 2021-05-09
+  gabarito_preliminar: 2021-05-11
+cargos:
+  - id: policial-rodoviario-federal
+    nome: Policial Rodoviário Federal
+    escolaridade: superior
+    vagas:
+      total: 1500
+    etapas: [prova_objetiva, prova_discursiva, curso_de_formacao]
+documentos:
+  - tipo: prova
+    titulo: "Caderno da prova objetiva (120 itens Certo/Errado)"
+    url: https://cdn.cebraspe.org.br/concursos/PRF_21/arquivos/578_PRF_001_01.PDF
+    etapa: prova_objetiva
+    cargo: policial-rodoviario-federal
+  - tipo: prova
+    titulo: "Curso de Formação – 1ª prova objetiva (Enfrentamento à Criminalidade)"
+    url: https://cdn.cebraspe.org.br/concursos/prf_21/arquivos/632_PRF_CF_001_01.PDF
+    etapa: curso_de_formacao
+    cargo: policial-rodoviario-federal
+  - tipo: comunicado
+    titulo: "Edital nº 5 – PRF 2021 (reabertura)"
+    url: https://cdn.cebraspe.org.br/concursos/PRF_21/arquivos/ED_5_PRF_2021_REABERTURA.PDF
+  - tipo: comunicado
+    titulo: "Edital nº 20 – PRF 2021 (torna sem efeito e reabre envio de documentos)"
+    url: https://cdn.cebraspe.org.br/concursos/prf_21/arquivos/ED_20_PRF_2021_TORNA_SEM_EFEITO_REABRE_ENVIO_DOCS.PDF
+fontes:
+  - url: https://cdn.cebraspe.org.br/concursos/PRF_21/arquivos/578_PRF_001_01.PDF
+    tipo: oficial
+    descricao: Banca e caderno da prova objetiva (itens 1 a 120)
+    acessado_em: 2026-11-22
+  - url: https://cdn.cebraspe.org.br/concursos/prf_21/arquivos/632_PRF_CF_001_01.PDF
+    tipo: oficial
+    descricao: Prova do Curso de Formação
+    acessado_em: 2026-11-22
+  - url: https://blog.grancursosonline.com.br/concurso-prf-gabarito-preliminar/
+    tipo: cursinho
+    descricao: Data da prova e do gabarito preliminar
+    acessado_em: 2026-11-22
+  - url: https://www.direcaoconcursos.com.br/noticias/concurso-prf/
+    tipo: cursinho
+    descricao: Publicação do edital e número de vagas
+    acessado_em: 2026-11-22
+a_verificar:
+  - datas.edital, datas.prova_objetiva, datas.gabarito_preliminar (só cursinho; conferir no Edital nº 1 e no cronograma oficial)
+  - cargos[0].vagas.total e a divisão ampla/negros/PcD (conferir no Edital nº 1)
+  - situacao (houve suspensão e retomada ligadas à reserva de vagas para negros; homologação não conferida)
+  - links para Edital nº 1 e gabaritos preliminar e definitivo
+atualizado_em: 2026-11-22

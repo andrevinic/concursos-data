@@ -1,0 +1,33 @@
+id: prf-2027
+orgao:
+  sigla: PRF
+  nome: Polícia Rodoviária Federal
+  esfera: federal
+edicao: 2027
+banca: null
+situacao: previsto
+cargos:
+  - id: policial-rodoviario-federal
+    nome: Policial Rodoviário Federal
+    escolaridade: superior
+fontes:
+  - url: https://folha.qconcursos.com/n/concurso-prf-2027-esther-dweck-preve-autorizacao
+    tipo: imprensa
+    descricao: Ministra da Gestão prevê autorização e novo edital para 2027
+    acessado_em: 2026-11-22
+  - url: https://www.novaconcursos.com.br/portal/noticias/concurso-prf-estuda-orcamento-13-mil-vagas/
+    tipo: cursinho
+    descricao: Estudo de orçamento citando até 13 mil vagas (não é autorização)
+    acessado_em: 2026-11-22
+  - url: https://www.novaconcursos.com.br/portal/concursos/concurso-prf/
+    tipo: cursinho
+    descricao: Pedido de 533 vagas em análise no MGI
+    acessado_em: 2026-11-22
+a_verificar:
+  - Autorização (portaria no Diário Oficial); até 2026-11-22 nenhuma foi encontrada
+  - Número de vagas (fontes citam pedidos diferentes, de 533 a 13 mil)
+  - Banca (Cebraspe organizou 2018 e 2021, mas nada definido para 2027)
+notas: >-
+  Concurso previsto, sem autorização oficial nem edital. Números de vagas e datas
+  na imprensa são previsões. Atualize quando sair a portaria no Diário Oficial da União.
+atualizado_em: 2026-11-22

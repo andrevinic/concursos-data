@@ -1,0 +1,49 @@
+id: prf-2018
+orgao:
+  sigla: PRF
+  nome: Polícia Rodoviária Federal
+  esfera: federal
+edicao: 2018
+banca: Cebraspe
+situacao: realizado
+datas:
+  edital: 2018-11-27
+  prova_objetiva: 2019-02-03
+cargos:
+  - id: policial-rodoviario-federal
+    nome: Policial Rodoviário Federal
+    escolaridade: superior
+    requisitos:
+      - Nível superior em qualquer área
+      - CNH categoria B ou superior
+    vagas:
+      total: 500
+      ampla: 367
+      negros: 100
+      pcd: 33
+      por_uf: {AC: 17, AM: 28, AP: 23, BA: 17, GO: 27, MA: 18, MG: 9, MS: 35, MT: 57, PA: 81, PI: 22, RJ: 10, RO: 74, RR: 15, RS: 23, SP: 19, TO: 25}
+    etapas: [prova_objetiva, prova_discursiva]
+documentos:
+  - tipo: retificacao
+    titulo: "Edital nº 2 – PRF, de 28/11/2018 (retifica o item 4, vagas, do Edital nº 1)"
+    url: https://cdn.cebraspe.org.br/concursos/PRF_18/arquivos/ED_2_PRF_2018_RET2.PDF
+    data: 2018-11-28
+fontes:
+  - url: https://cdn.cebraspe.org.br/concursos/PRF_18/arquivos/ED_2_PRF_2018_RET2.PDF
+    tipo: oficial
+    descricao: Banca, data do Edital nº 1 (27/11/2018) e quadro de vagas por UF
+    acessado_em: 2026-11-22
+  - url: https://jornalcontabil.com.br/noticia/concurso-policia-rodoviaria-federal-2019/
+    tipo: imprensa
+    descricao: Data prevista da prova (03/02/2019)
+    acessado_em: 2026-11-22
+  - url: https://www.estrategiaconcursos.com.br/blog/edital-prf-2018/
+    tipo: cursinho
+    descricao: Requisitos e etapas
+    acessado_em: 2026-11-22
+a_verificar:
+  - datas.prova_objetiva (só fonte de imprensa, data prevista)
+  - cargos[0].requisitos e etapas (só cursinho; conferir no Edital nº 1)
+  - situacao (homologação não conferida)
+  - link para o Edital nº 1, prova e gabaritos oficiais
+atualizado_em: 2026-11-22

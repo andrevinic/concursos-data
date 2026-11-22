@@ -1,0 +1,333 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/andrevinic/concursos-data/schema/concurso.schema.json",
+  "title": "Concurso",
+  "description": "Um concurso público (uma edição): órgão, banca, situação, cargos, datas e documentos oficiais. Cada fato importante deve ter fonte.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "orgao",
+    "edicao",
+    "situacao",
+    "cargos",
+    "fontes",
+    "atualizado_em"
+  ],
+  "properties": {
+    "id": {
+      "description": "Identificador estável: <orgao>-<edicao>, minúsculo. Ex.: prf-2021.",
+      "type": "string",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+    },
+    "orgao": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "sigla",
+        "nome"
+      ],
+      "properties": {
+        "sigla": {
+          "type": "string"
+        },
+        "nome": {
+          "type": "string"
+        },
+        "esfera": {
+          "enum": [
+            "federal",
+            "estadual",
+            "municipal",
+            "distrital"
+          ]
+        },
+        "uf": {
+          "$ref": "#/$defs/uf"
+        }
+      }
+    },
+    "edicao": {
+      "description": "Ano do edital (ou previsto). Ex.: 2021.",
+      "type": "integer",
+      "minimum": 1950,
+      "maximum": 2100
+    },
+    "banca": {
+      "description": "Sigla da banca organizadora. null enquanto não definida.",
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "situacao": {
+      "enum": [
+        "previsto",
+        "autorizado",
+        "banca_definida",
+        "edital_publicado",
+        "em_andamento",
+        "realizado",
+        "suspenso",
+        "homologado",
+        "cancelado"
+      ],
+      "description": "realizado = provas aplicadas, homologação ainda não confirmada por fonte oficial."
+    },
+    "pagina_oficial": {
+      "$ref": "#/$defs/url"
+    },
+    "datas": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "edital": {
+          "$ref": "#/$defs/data"
+        },
+        "inscricoes_inicio": {
+          "$ref": "#/$defs/data"
+        },
+        "inscricoes_fim": {
+          "$ref": "#/$defs/data"
+        },
+        "prova_objetiva": {
+          "$ref": "#/$defs/data"
+        },
+        "gabarito_preliminar": {
+          "$ref": "#/$defs/data"
+        },
+        "gabarito_definitivo": {
+          "$ref": "#/$defs/data"
+        },
+        "homologacao": {
+          "$ref": "#/$defs/data"
+        }
+      }
+    },
+    "cargos": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/cargo"
+      }
+    },
+    "documentos": {
+      "description": "Links para arquivos OFICIAIS (banca, órgão, Diário Oficial). O repositório não guarda cópias.",
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/documento"
+      }
+    },
+    "fontes": {
+      "description": "De onde vieram as informações. Prefira fontes oficiais.",
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/fonte"
+      }
+    },
+    "a_verificar": {
+      "description": "Campos ou fatos que vieram só de fontes não oficiais ou que divergem entre fontes.",
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "notas": {
+      "type": "string"
+    },
+    "atualizado_em": {
+      "$ref": "#/$defs/data"
+    }
+  },
+  "$defs": {
+    "data": {
+      "type": "string",
+      "format": "date",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+    },
+    "url": {
+      "type": "string",
+      "format": "uri",
+      "pattern": "^https?://"
+    },
+    "uf": {
+      "enum": [
+        "AC",
+        "AL",
+        "AP",
+        "AM",
+        "BA",
+        "CE",
+        "DF",
+        "ES",
+        "GO",
+        "MA",
+        "MT",
+        "MS",
+        "MG",
+        "PA",
+        "PB",
+        "PR",
+        "PE",
+        "PI",
+        "RJ",
+        "RN",
+        "RS",
+        "RO",
+        "RR",
+        "SC",
+        "SP",
+        "SE",
+        "TO"
+      ]
+    },
+    "vagas": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "total": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "ampla": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "negros": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "pcd": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "cadastro_reserva": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "por_uf": {
+          "type": "object",
+          "propertyNames": {
+            "$ref": "#/$defs/uf"
+          },
+          "additionalProperties": {
+            "type": "integer",
+            "minimum": 0
+          }
+        }
+      }
+    },
+    "cargo": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "nome"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+        },
+        "nome": {
+          "type": "string"
+        },
+        "escolaridade": {
+          "enum": [
+            "fundamental",
+            "medio",
+            "tecnico",
+            "superior"
+          ]
+        },
+        "requisitos": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "vagas": {
+          "$ref": "#/$defs/vagas"
+        },
+        "remuneracao_inicial": {
+          "type": "number",
+          "minimum": 0
+        },
+        "etapas": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "documento": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "tipo",
+        "titulo",
+        "url"
+      ],
+      "properties": {
+        "tipo": {
+          "enum": [
+            "edital",
+            "retificacao",
+            "comunicado",
+            "prova",
+            "gabarito_preliminar",
+            "gabarito_definitivo",
+            "resultado",
+            "outro"
+          ]
+        },
+        "titulo": {
+          "type": "string"
+        },
+        "url": {
+          "$ref": "#/$defs/url"
+        },
+        "data": {
+          "$ref": "#/$defs/data"
+        },
+        "etapa": {
+          "type": "string",
+          "description": "Ex.: prova_objetiva, curso_de_formacao"
+        },
+        "cargo": {
+          "type": "string",
+          "description": "id do cargo, se o documento for de um cargo só"
+        }
+      }
+    },
+    "fonte": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "url",
+        "tipo",
+        "acessado_em"
+      ],
+      "properties": {
+        "url": {
+          "$ref": "#/$defs/url"
+        },
+        "tipo": {
+          "enum": [
+            "oficial",
+            "diario_oficial",
+            "imprensa",
+            "cursinho"
+          ]
+        },
+        "descricao": {
+          "type": "string"
+        },
+        "acessado_em": {
+          "$ref": "#/$defs/data"
+        }
+      }
+    }
+  }
+}

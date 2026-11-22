@@ -1,0 +1,21 @@
+name: validar
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  validar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - run: python scripts/validar.py
+      - run: python scripts/gerar.py && git diff --exit-code dist/
+        name: dist/ está atualizado (rode scripts/gerar.py)
