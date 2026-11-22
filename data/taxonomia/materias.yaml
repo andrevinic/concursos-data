@@ -1,0 +1,18 @@
+# Matérias usadas na classificação das questões. id estável, nome para exibição.
+# Assuntos ficam em texto livre por enquanto; a taxonomia de assuntos vem depois.
+materias:
+  lingua-portuguesa: Língua Portuguesa
+  lingua-inglesa: Língua Inglesa
+  lingua-espanhola: Língua Espanhola
+  raciocinio-logico: Raciocínio Lógico-Matemático
+  informatica: Informática
+  fisica: Física
+  etica-e-cidadania: Ética e Cidadania
+  geopolitica: Geopolítica
+  legislacao-de-transito: Legislação de Trânsito
+  direito-administrativo: Direito Administrativo
+  direito-constitucional: Direito Constitucional
+  direito-penal: Direito Penal
+  direito-processual-penal: Direito Processual Penal
+  legislacao-especial: Legislação Especial
+  direitos-humanos: Direitos Humanos

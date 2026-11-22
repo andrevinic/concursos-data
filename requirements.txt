@@ -1,2 +1,3 @@
 pyyaml>=6
 jsonschema[format]>=4.18
+pdfplumber>=0.11

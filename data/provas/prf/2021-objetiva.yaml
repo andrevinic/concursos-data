@@ -1,0 +1,155 @@
+id: prf-2021-objetiva
+concurso: prf-2021
+cargo: policial-rodoviario-federal
+etapa: prova_objetiva
+formato: certo_errado
+total_itens: 120
+cadernos:
+  - id: ingles
+    titulo: Itens 1 a 8, Língua Inglesa (opção do candidato)
+    itens: [1, 8]
+    prova: https://cdn.cebraspe.org.br/concursos/prf_21/arquivos/578_PRF_ING_01.PDF
+    gabarito_definitivo: https://cdn.cebraspe.org.br/concursos/prf_21/arquivos/GAB_DEFINITIVO_578_PRF_ING_01.PDF
+  - id: espanhol
+    titulo: Itens 1 a 8, Língua Espanhola (opção do candidato)
+    itens: [1, 8]
+    prova: https://cdn.cebraspe.org.br/concursos/prf_21/arquivos/578_PRF_ESP_02.PDF
+    gabarito_definitivo: https://cdn.cebraspe.org.br/concursos/prf_21/arquivos/GAB_DEFINITIVO_578_PRF_ESP_02.PDF
+  - id: geral
+    titulo: Itens 9 a 120
+    itens: [9, 120]
+    prova: https://cdn.cebraspe.org.br/concursos/prf_21/arquivos/578_PRF_001_01.PDF
+    gabarito_definitivo: https://cdn.cebraspe.org.br/concursos/prf_21/arquivos/GAB_DEFINITIVO_578_PRF_001_01.PDF
+justificativas: https://cdn.cebraspe.org.br/concursos/prf_21/arquivos/PRF_21_JUSTIFICATIVAS_ALTERAO_DE_GABARITO.PDF
+# gabarito: C = certo, E = errado, X = anulado (gabarito definitivo oficial)
+# materia: id de data/taxonomia/materias.yaml; assunto: classificação do concursos-data, não da banca
+itens:
+  - {caderno: ingles, n: 1, materia: lingua-inglesa, assunto: Compreensão de texto, gabarito: X}
+  - {caderno: ingles, n: 2, materia: lingua-inglesa, assunto: Compreensão de texto, gabarito: C}
+  - {caderno: ingles, n: 3, materia: lingua-inglesa, assunto: Compreensão de texto, gabarito: E}
+  - {caderno: ingles, n: 4, materia: lingua-inglesa, assunto: Compreensão de texto, gabarito: C}
+  - {caderno: ingles, n: 5, materia: lingua-inglesa, assunto: Compreensão de texto, gabarito: E}
+  - {caderno: ingles, n: 6, materia: lingua-inglesa, assunto: Compreensão de texto, gabarito: C}
+  - {caderno: ingles, n: 7, materia: lingua-inglesa, assunto: Compreensão de texto, gabarito: C}
+  - {caderno: ingles, n: 8, materia: lingua-inglesa, assunto: Compreensão de texto, gabarito: E}
+  - {caderno: espanhol, n: 1, materia: lingua-espanhola, assunto: Compreensão de texto, gabarito: X}
+  - {caderno: espanhol, n: 2, materia: lingua-espanhola, assunto: Compreensão de texto, gabarito: E}
+  - {caderno: espanhol, n: 3, materia: lingua-espanhola, assunto: Compreensão de texto, gabarito: C}
+  - {caderno: espanhol, n: 4, materia: lingua-espanhola, assunto: Compreensão de texto, gabarito: C}
+  - {caderno: espanhol, n: 5, materia: lingua-espanhola, assunto: Compreensão de texto, gabarito: E}
+  - {caderno: espanhol, n: 6, materia: lingua-espanhola, assunto: Compreensão de texto, gabarito: E}
+  - {caderno: espanhol, n: 7, materia: lingua-espanhola, assunto: Compreensão de texto, gabarito: C}
+  - {caderno: espanhol, n: 8, materia: lingua-espanhola, assunto: Compreensão de texto, gabarito: C}
+  - {caderno: geral, n: 9, materia: lingua-portuguesa, assunto: "Interpretação e aspectos linguísticos de texto", gabarito: C}
+  - {caderno: geral, n: 10, materia: lingua-portuguesa, assunto: "Interpretação e aspectos linguísticos de texto", gabarito: E}
+  - {caderno: geral, n: 11, materia: lingua-portuguesa, assunto: "Interpretação e aspectos linguísticos de texto", gabarito: C}
+  - {caderno: geral, n: 12, materia: lingua-portuguesa, assunto: "Interpretação e aspectos linguísticos de texto", gabarito: C}
+  - {caderno: geral, n: 13, materia: lingua-portuguesa, assunto: "Interpretação e aspectos linguísticos de texto", gabarito: C}
+  - {caderno: geral, n: 14, materia: lingua-portuguesa, assunto: "Interpretação e aspectos linguísticos de texto", gabarito: E}
+  - {caderno: geral, n: 15, materia: lingua-portuguesa, assunto: "Interpretação e aspectos linguísticos de texto", gabarito: E}
+  - {caderno: geral, n: 16, materia: lingua-portuguesa, assunto: "Interpretação e aspectos linguísticos de texto", gabarito: C}
+  - {caderno: geral, n: 17, materia: lingua-portuguesa, assunto: "Interpretação e aspectos linguísticos de texto", gabarito: C}
+  - {caderno: geral, n: 18, materia: lingua-portuguesa, assunto: "Interpretação e aspectos linguísticos de texto", gabarito: E}
+  - {caderno: geral, n: 19, materia: lingua-portuguesa, assunto: "Interpretação e aspectos linguísticos de texto", gabarito: C}
+  - {caderno: geral, n: 20, materia: lingua-portuguesa, assunto: "Interpretação e aspectos linguísticos de texto", gabarito: E}
+  - {caderno: geral, n: 21, materia: lingua-portuguesa, assunto: "Interpretação e aspectos linguísticos de texto", gabarito: E}
+  - {caderno: geral, n: 22, materia: lingua-portuguesa, assunto: "Redação oficial (Manual de Redação da Presidência da República)", gabarito: E}
+  - {caderno: geral, n: 23, materia: lingua-portuguesa, assunto: "Redação oficial (Manual de Redação da Presidência da República)", gabarito: E}
+  - {caderno: geral, n: 24, materia: lingua-portuguesa, assunto: "Redação oficial (Manual de Redação da Presidência da República)", gabarito: C}
+  - {caderno: geral, n: 25, materia: lingua-portuguesa, assunto: "Redação oficial (Manual de Redação da Presidência da República)", gabarito: E}
+  - {caderno: geral, n: 26, materia: lingua-portuguesa, assunto: "Redação oficial (Manual de Redação da Presidência da República)", gabarito: C}
+  - {caderno: geral, n: 27, materia: raciocinio-logico, assunto: "Situações-problema", gabarito: C}
+  - {caderno: geral, n: 28, materia: raciocinio-logico, assunto: "Situações-problema", gabarito: E}
+  - {caderno: geral, n: 29, materia: raciocinio-logico, assunto: "Situações-problema", gabarito: E}
+  - {caderno: geral, n: 30, materia: raciocinio-logico, assunto: "Situações-problema", gabarito: E}
+  - {caderno: geral, n: 31, materia: raciocinio-logico, assunto: "Situações-problema", gabarito: C}
+  - {caderno: geral, n: 32, materia: raciocinio-logico, assunto: "Situações-problema", gabarito: C}
+  - {caderno: geral, n: 33, materia: informatica, assunto: "Internet, intranet e Windows", gabarito: E}
+  - {caderno: geral, n: 34, materia: informatica, assunto: "Internet, intranet e Windows", gabarito: E}
+  - {caderno: geral, n: 35, materia: informatica, assunto: "Internet, intranet e Windows", gabarito: C}
+  - {caderno: geral, n: 36, materia: informatica, assunto: "Transformação digital", gabarito: C}
+  - {caderno: geral, n: 37, materia: informatica, assunto: "Segurança da informação e computação em nuvem", gabarito: E}
+  - {caderno: geral, n: 38, materia: informatica, assunto: "Segurança da informação e computação em nuvem", gabarito: E}
+  - {caderno: geral, n: 39, materia: informatica, assunto: "Segurança da informação e computação em nuvem", gabarito: X}
+  - {caderno: geral, n: 40, materia: fisica, assunto: "Mecânica clássica", gabarito: C}
+  - {caderno: geral, n: 41, materia: fisica, assunto: "Mecânica clássica", gabarito: E}
+  - {caderno: geral, n: 42, materia: fisica, assunto: "Mecânica clássica", gabarito: E}
+  - {caderno: geral, n: 43, materia: fisica, assunto: "Mecânica clássica", gabarito: C}
+  - {caderno: geral, n: 44, materia: fisica, assunto: "Mecânica clássica", gabarito: E}
+  - {caderno: geral, n: 45, materia: etica-e-cidadania, assunto: "Ética no serviço público", gabarito: X}
+  - {caderno: geral, n: 46, materia: etica-e-cidadania, assunto: "Ética no serviço público", gabarito: E}
+  - {caderno: geral, n: 47, materia: etica-e-cidadania, assunto: "Ética no serviço público", gabarito: C}
+  - {caderno: geral, n: 48, materia: etica-e-cidadania, assunto: "Ética no serviço público", gabarito: C}
+  - {caderno: geral, n: 49, materia: etica-e-cidadania, assunto: "Ética no serviço público", gabarito: E}
+  - {caderno: geral, n: 50, materia: etica-e-cidadania, assunto: "Ética no serviço público", gabarito: C}
+  - {caderno: geral, n: 51, materia: geopolitica, assunto: "Rede de transportes no Brasil", gabarito: C}
+  - {caderno: geral, n: 52, materia: geopolitica, assunto: "Rede de transportes no Brasil", gabarito: E}
+  - {caderno: geral, n: 53, materia: geopolitica, assunto: "Rede de transportes no Brasil", gabarito: C}
+  - {caderno: geral, n: 54, materia: geopolitica, assunto: "Estrutura urbana e metrópoles", gabarito: C}
+  - {caderno: geral, n: 55, materia: geopolitica, assunto: "Estrutura urbana e metrópoles", gabarito: E}
+  - {caderno: geral, n: 56, materia: legislacao-de-transito, assunto: "Código de Trânsito Brasileiro", gabarito: C}
+  - {caderno: geral, n: 57, materia: legislacao-de-transito, assunto: "Código de Trânsito Brasileiro", gabarito: C}
+  - {caderno: geral, n: 58, materia: legislacao-de-transito, assunto: "Código de Trânsito Brasileiro", gabarito: E}
+  - {caderno: geral, n: 59, materia: legislacao-de-transito, assunto: "Código de Trânsito Brasileiro", gabarito: E}
+  - {caderno: geral, n: 60, materia: legislacao-de-transito, assunto: "Código de Trânsito Brasileiro", gabarito: C}
+  - {caderno: geral, n: 61, materia: legislacao-de-transito, assunto: "Resoluções do CONTRAN", gabarito: E}
+  - {caderno: geral, n: 62, materia: legislacao-de-transito, assunto: "Resoluções do CONTRAN", gabarito: E}
+  - {caderno: geral, n: 63, materia: legislacao-de-transito, assunto: "Resoluções do CONTRAN", gabarito: C}
+  - {caderno: geral, n: 64, materia: legislacao-de-transito, assunto: "Resoluções do CONTRAN", gabarito: C}
+  - {caderno: geral, n: 65, materia: legislacao-de-transito, assunto: "Resoluções do CONTRAN", gabarito: C}
+  - {caderno: geral, n: 66, materia: legislacao-de-transito, assunto: "Resoluções do CONTRAN", gabarito: E}
+  - {caderno: geral, n: 67, materia: legislacao-de-transito, assunto: "Resoluções do CONTRAN", gabarito: X}
+  - {caderno: geral, n: 68, materia: legislacao-de-transito, assunto: "Resoluções do CONTRAN", gabarito: E}
+  - {caderno: geral, n: 69, materia: legislacao-de-transito, assunto: "Resoluções do CONTRAN", gabarito: X}
+  - {caderno: geral, n: 70, materia: legislacao-de-transito, assunto: "Resoluções do CONTRAN", gabarito: E}
+  - {caderno: geral, n: 71, materia: legislacao-de-transito, assunto: "Registrador instantâneo de velocidade e tempo (tacógrafo)", gabarito: C}
+  - {caderno: geral, n: 72, materia: legislacao-de-transito, assunto: "Registrador instantâneo de velocidade e tempo (tacógrafo)", gabarito: C}
+  - {caderno: geral, n: 73, materia: legislacao-de-transito, assunto: "Registrador instantâneo de velocidade e tempo (tacógrafo)", gabarito: E}
+  - {caderno: geral, n: 74, materia: legislacao-de-transito, assunto: "Limites de peso e dimensões de veículos", gabarito: E}
+  - {caderno: geral, n: 75, materia: legislacao-de-transito, assunto: "Limites de peso e dimensões de veículos", gabarito: E}
+  - {caderno: geral, n: 76, materia: legislacao-de-transito, assunto: "Limites de peso e dimensões de veículos", gabarito: X}
+  - {caderno: geral, n: 77, materia: legislacao-de-transito, assunto: "Tempo de direção e descanso do motorista profissional", gabarito: C}
+  - {caderno: geral, n: 78, materia: legislacao-de-transito, assunto: "Tempo de direção e descanso do motorista profissional", gabarito: E}
+  - {caderno: geral, n: 79, materia: legislacao-de-transito, assunto: "Tempo de direção e descanso do motorista profissional", gabarito: E}
+  - {caderno: geral, n: 80, materia: legislacao-de-transito, assunto: "Campanhas educativas e fiscalização de peso por balança", gabarito: C}
+  - {caderno: geral, n: 81, materia: legislacao-de-transito, assunto: "Campanhas educativas e fiscalização de peso por balança", gabarito: E}
+  - {caderno: geral, n: 82, materia: legislacao-de-transito, assunto: "Campanhas educativas e fiscalização de peso por balança", gabarito: E}
+  - {caderno: geral, n: 83, materia: legislacao-de-transito, assunto: "Segurança no transporte de cargas", gabarito: X}
+  - {caderno: geral, n: 84, materia: legislacao-de-transito, assunto: "Segurança no transporte de cargas", gabarito: C}
+  - {caderno: geral, n: 85, materia: legislacao-de-transito, assunto: "Segurança no transporte de cargas", gabarito: E}
+  - {caderno: geral, n: 86, materia: direito-administrativo, assunto: "Situação hipotética: processo administrativo e penalidades", gabarito: E}
+  - {caderno: geral, n: 87, materia: direito-administrativo, assunto: "Situação hipotética: processo administrativo e penalidades", gabarito: E}
+  - {caderno: geral, n: 88, materia: direito-administrativo, assunto: "Situação hipotética: processo administrativo e penalidades", gabarito: E}
+  - {caderno: geral, n: 89, materia: direito-administrativo, assunto: "Situação hipotética: processo administrativo e penalidades", gabarito: X}
+  - {caderno: geral, n: 90, materia: direito-administrativo, assunto: "Situação hipotética: processo administrativo e penalidades", gabarito: C}
+  - {caderno: geral, n: 91, materia: direito-administrativo, assunto: "Carreira de policial rodoviário federal", gabarito: E}
+  - {caderno: geral, n: 92, materia: direito-administrativo, assunto: "Carreira de policial rodoviário federal", gabarito: C}
+  - {caderno: geral, n: 93, materia: direito-constitucional, assunto: "Direitos e garantias fundamentais e remédios constitucionais", gabarito: E}
+  - {caderno: geral, n: 94, materia: direito-constitucional, assunto: "Direitos e garantias fundamentais e remédios constitucionais", gabarito: C}
+  - {caderno: geral, n: 95, materia: direito-constitucional, assunto: "Direitos e garantias fundamentais e remédios constitucionais", gabarito: C}
+  - {caderno: geral, n: 96, materia: direito-constitucional, assunto: "Direitos e garantias fundamentais e remédios constitucionais", gabarito: E}
+  - {caderno: geral, n: 97, materia: direito-constitucional, assunto: "Direitos e garantias fundamentais e remédios constitucionais", gabarito: C}
+  - {caderno: geral, n: 98, materia: direito-constitucional, assunto: "Defesa do Estado e das instituições democráticas", gabarito: X}
+  - {caderno: geral, n: 99, materia: direito-constitucional, assunto: "Defesa do Estado e das instituições democráticas", gabarito: X}
+  - {caderno: geral, n: 100, materia: direito-penal, assunto: "Situação hipotética: crimes contra a administração pública", gabarito: E}
+  - {caderno: geral, n: 101, materia: direito-penal, assunto: "Situação hipotética: crimes contra a administração pública", gabarito: E}
+  - {caderno: geral, n: 102, materia: direito-penal, assunto: "Situação hipotética: crimes contra a administração pública", gabarito: C}
+  - {caderno: geral, n: 103, materia: direito-penal, assunto: "Situação hipotética: crimes contra a administração pública", gabarito: E}
+  - {caderno: geral, n: 104, materia: direito-penal, assunto: "Situação hipotética: crimes contra a administração pública", gabarito: C}
+  - {caderno: geral, n: 105, materia: direito-processual-penal, assunto: "Situação hipotética: ação penal e prisão", gabarito: E}
+  - {caderno: geral, n: 106, materia: direito-processual-penal, assunto: "Situação hipotética: ação penal e prisão", gabarito: C}
+  - {caderno: geral, n: 107, materia: direito-processual-penal, assunto: "Situação hipotética: ação penal e prisão", gabarito: E}
+  - {caderno: geral, n: 108, materia: direito-processual-penal, assunto: "Situação hipotética: ação penal e prisão", gabarito: E}
+  - {caderno: geral, n: 109, materia: direito-processual-penal, assunto: "Situação hipotética: ação penal e prisão", gabarito: C}
+  - {caderno: geral, n: 110, materia: legislacao-especial, assunto: "Identificação criminal, tortura, abuso de autoridade, drogas, armas, crimes hediondos", gabarito: E}
+  - {caderno: geral, n: 111, materia: legislacao-especial, assunto: "Identificação criminal, tortura, abuso de autoridade, drogas, armas, crimes hediondos", gabarito: C}
+  - {caderno: geral, n: 112, materia: legislacao-especial, assunto: "Identificação criminal, tortura, abuso de autoridade, drogas, armas, crimes hediondos", gabarito: C}
+  - {caderno: geral, n: 113, materia: legislacao-especial, assunto: "Identificação criminal, tortura, abuso de autoridade, drogas, armas, crimes hediondos", gabarito: C}
+  - {caderno: geral, n: 114, materia: legislacao-especial, assunto: "Identificação criminal, tortura, abuso de autoridade, drogas, armas, crimes hediondos", gabarito: C}
+  - {caderno: geral, n: 115, materia: legislacao-especial, assunto: "Identificação criminal, tortura, abuso de autoridade, drogas, armas, crimes hediondos", gabarito: E}
+  - {caderno: geral, n: 116, materia: direitos-humanos, assunto: "Direitos humanos na CF, Pacto de São José e STF", gabarito: C}
+  - {caderno: geral, n: 117, materia: direitos-humanos, assunto: "Direitos humanos na CF, Pacto de São José e STF", gabarito: E}
+  - {caderno: geral, n: 118, materia: direitos-humanos, assunto: "Direitos humanos na CF, Pacto de São José e STF", gabarito: C}
+  - {caderno: geral, n: 119, materia: direitos-humanos, assunto: "Direitos humanos na CF, Pacto de São José e STF", gabarito: C}
+  - {caderno: geral, n: 120, materia: direitos-humanos, assunto: "Direitos humanos na CF, Pacto de São José e STF", gabarito: E}
+atualizado_em: 2026-11-22

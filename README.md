@@ -38,32 +38,62 @@ O formato está em [`schema/concurso.schema.json`](schema/concurso.schema.json).
 |---|---|
 | PRF | 2018, 2021, 2027 (previsto) |
 
+## Questões
+
+Para cada prova, `data/provas/<orgao>/<ano>-<etapa>.yaml` guarda os **links dos cadernos oficiais** e, para
+cada item, **matéria, assunto e gabarito definitivo** (C, E ou X para anulado). O texto das questões **não fica
+no repositório**: um script baixa os PDFs do site da banca e monta o banco completo na sua máquina.
+
+```bash
+.venv/bin/python scripts/baixar_questoes.py prf-2021-objetiva   # → questoes/prf-2021-objetiva.jsonl
+.venv/bin/python scripts/baixar_questoes.py --todas
+```
+
+Cada linha do `.jsonl`:
+
+```json
+{"prova": "prf-2021-objetiva", "caderno": "geral", "n": 40, "materia": "fisica",
+ "assunto": "Mecânica clássica", "gabarito": "C",
+ "contexto": "Um projétil foi lançado obliquamente… julgue os itens que se seguem.",
+ "enunciado": "Durante todo o movimento, a aceleração vetorial do projétil será constante.",
+ "pagina": 2, "fonte": "https://cdn.cebraspe.org.br/…/578_PRF_001_01.PDF"}
+```
+
+Limitações: figuras, tabelas e índices de fórmulas (o "n" de qₙ) não são extraídos. Confira com o PDF oficial.
+
+| Prova | Itens | Anulados |
+|---|---|---|
+| PRF 2021, objetiva (Cebraspe, Certo/Errado) | 120 (1–8 em inglês **ou** espanhol) | 11 |
+
 ## Como usar
 
-O arquivo pronto fica em `dist/concursos.json` (todos os concursos num JSON só). Para gerar:
+Os arquivos prontos ficam em `dist/`: `concursos.json` (todos os concursos) e `provas.json` (itens com
+matéria, assunto e gabarito). Para gerar:
 
 ```bash
 python3 -m venv .venv && .venv/bin/pip install -r requirements.txt
 .venv/bin/python scripts/validar.py   # schema + regras (vagas somam, datas em ordem, ids)
-.venv/bin/python scripts/gerar.py     # gera dist/concursos.json
+.venv/bin/python scripts/gerar.py     # gera dist/concursos.json e dist/provas.json
 ```
 
 ## Princípios
 
 1. **Fonte em tudo.** Cada fato importante tem uma fonte. Oficial (banca, órgão, Diário Oficial) vale mais que
    imprensa ou cursinho. O que só veio de fonte não oficial vai para `a_verificar`.
-2. **Links, não cópias.** O repositório aponta para os PDFs oficiais e não guarda cópias de provas ou editais.
+2. **Links, não cópias.** O repositório aponta para os PDFs oficiais e não guarda cópias de provas, editais
+   ou do texto das questões. O texto é montado na máquina de quem usa, direto da fonte oficial.
 3. **Nada de conteúdo de plataformas.** Não copie questões, comentários, classificações ou estatísticas do
    TecConcursos, QConcursos, Gran, Estratégia ou outras plataformas: são trabalho e conteúdo delas.
 4. **Previsão não é fato.** Concurso sem portaria é `previsto`, e números da imprensa ficam em `a_verificar`.
 
 ## Próximos passos
 
-- [ ] Completar PRF (Edital nº 1 de 2018 e 2021, gabaritos, edições anteriores)
+- [ ] Completar PRF 2018 (Edital nº 1, prova e gabaritos oficiais)
 - [ ] Outros concursos policiais: PF, PCs, polícias científicas
 - [ ] Taxonomia aberta de matérias e assuntos
-- [ ] Camada de **questões** (estrutura, gabarito definitivo, anuladas, desatualizadas). Antes de publicar
-      questões, falta uma análise jurídica sobre a reutilização de provas
+- [x] Camada de questões: gabarito definitivo, matéria e assunto por item; texto montado localmente
+- [ ] Edições anteriores da PRF; marcar itens desatualizados por mudança de lei
+- [ ] Análise jurídica antes de qualquer redistribuição do texto das provas
 - [ ] Servidor MCP lendo esta base
 
 ## Contribuindo

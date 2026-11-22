@@ -1,0 +1,57 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/andrevinic/concursos-data/schema/prova.schema.json",
+  "title": "Prova",
+  "description": "Uma prova de um concurso: cadernos oficiais (links) e, para cada item, matéria, assunto e gabarito definitivo. O texto das questões não fica no repositório: scripts/baixar_questoes.py monta o texto a partir dos PDFs oficiais na máquina de quem usa.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "concurso", "cargo", "etapa", "formato", "total_itens", "cadernos", "itens", "atualizado_em"],
+  "properties": {
+    "id": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
+    "concurso": { "type": "string", "description": "id de um concurso em data/concursos" },
+    "cargo": { "type": "string", "description": "id de um cargo desse concurso" },
+    "etapa": { "enum": ["prova_objetiva", "prova_discursiva", "curso_de_formacao"] },
+    "formato": { "enum": ["certo_errado", "multipla_escolha_4", "multipla_escolha_5"] },
+    "total_itens": { "type": "integer", "minimum": 1, "description": "Itens que cada candidato responde" },
+    "cadernos": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "titulo", "itens", "prova"],
+        "properties": {
+          "id": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+          "titulo": { "type": "string" },
+          "itens": { "type": "array", "items": { "type": "integer", "minimum": 1 }, "minItems": 2, "maxItems": 2, "description": "[primeiro, último]" },
+          "prova": { "$ref": "#/$defs/url" },
+          "gabarito_preliminar": { "$ref": "#/$defs/url" },
+          "gabarito_definitivo": { "$ref": "#/$defs/url" }
+        }
+      }
+    },
+    "justificativas": { "$ref": "#/$defs/url" },
+    "itens": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["caderno", "n", "materia", "gabarito"],
+        "properties": {
+          "caderno": { "type": "string" },
+          "n": { "type": "integer", "minimum": 1 },
+          "materia": { "type": "string" },
+          "assunto": { "type": "string" },
+          "gabarito": { "enum": ["C", "E", "A", "B", "D", "X"], "description": "Definitivo. X = anulado." },
+          "gabarito_preliminar": { "enum": ["C", "E", "A", "B", "D"] },
+          "desatualizado": { "type": "string", "description": "Por que o gabarito pode não valer mais (lei nova, súmula...)" }
+        }
+      }
+    },
+    "atualizado_em": { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$" }
+  },
+  "$defs": {
+    "url": { "type": "string", "format": "uri", "pattern": "^https?://" }
+  }
+}

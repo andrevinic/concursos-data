@@ -102,7 +102,7 @@
       "situacao": "realizado",
       "pagina_oficial": "https://www.cebraspe.org.br/concursos/prf_21",
       "datas": {
-        "edital": "2021-01-19",
+        "edital": "2021-01-18",
         "prova_objetiva": "2021-05-09",
         "gabarito_preliminar": "2021-05-11"
       },
@@ -112,7 +112,10 @@
           "nome": "Policial Rodoviário Federal",
           "escolaridade": "superior",
           "vagas": {
-            "total": 1500
+            "total": 1500,
+            "ampla": 1125,
+            "negros": 300,
+            "pcd": 75
           },
           "etapas": [
             "prova_objetiva",
@@ -123,11 +126,55 @@
       ],
       "documentos": [
         {
+          "tipo": "edital",
+          "titulo": "Edital nº 1 – PRF, de 18/01/2021 (abertura)",
+          "url": "https://cdn.cebraspe.org.br/concursos/prf_21/arquivos/ED_1_PRF_2021_ABERTURA.PDF",
+          "data": "2021-01-18"
+        },
+        {
           "tipo": "prova",
-          "titulo": "Caderno da prova objetiva (120 itens Certo/Errado)",
-          "url": "https://cdn.cebraspe.org.br/concursos/PRF_21/arquivos/578_PRF_001_01.PDF",
+          "titulo": "Prova objetiva, itens 9 a 120",
+          "url": "https://cdn.cebraspe.org.br/concursos/prf_21/arquivos/578_PRF_001_01.PDF",
           "etapa": "prova_objetiva",
           "cargo": "policial-rodoviario-federal"
+        },
+        {
+          "tipo": "prova",
+          "titulo": "Prova objetiva, itens 1 a 8 (Língua Inglesa)",
+          "url": "https://cdn.cebraspe.org.br/concursos/prf_21/arquivos/578_PRF_ING_01.PDF",
+          "etapa": "prova_objetiva",
+          "cargo": "policial-rodoviario-federal"
+        },
+        {
+          "tipo": "prova",
+          "titulo": "Prova objetiva, itens 1 a 8 (Língua Espanhola)",
+          "url": "https://cdn.cebraspe.org.br/concursos/prf_21/arquivos/578_PRF_ESP_02.PDF",
+          "etapa": "prova_objetiva",
+          "cargo": "policial-rodoviario-federal"
+        },
+        {
+          "tipo": "gabarito_definitivo",
+          "titulo": "Gabarito definitivo, itens 9 a 120",
+          "url": "https://cdn.cebraspe.org.br/concursos/prf_21/arquivos/GAB_DEFINITIVO_578_PRF_001_01.PDF",
+          "etapa": "prova_objetiva"
+        },
+        {
+          "tipo": "gabarito_definitivo",
+          "titulo": "Gabarito definitivo, itens 1 a 8 (Língua Inglesa)",
+          "url": "https://cdn.cebraspe.org.br/concursos/prf_21/arquivos/GAB_DEFINITIVO_578_PRF_ING_01.PDF",
+          "etapa": "prova_objetiva"
+        },
+        {
+          "tipo": "gabarito_definitivo",
+          "titulo": "Gabarito definitivo, itens 1 a 8 (Língua Espanhola)",
+          "url": "https://cdn.cebraspe.org.br/concursos/prf_21/arquivos/GAB_DEFINITIVO_578_PRF_ESP_02.PDF",
+          "etapa": "prova_objetiva"
+        },
+        {
+          "tipo": "outro",
+          "titulo": "Justificativas de alterações de gabarito",
+          "url": "https://cdn.cebraspe.org.br/concursos/prf_21/arquivos/PRF_21_JUSTIFICATIVAS_ALTERAO_DE_GABARITO.PDF",
+          "etapa": "prova_objetiva"
         },
         {
           "tipo": "prova",
@@ -149,15 +196,15 @@
       ],
       "fontes": [
         {
-          "url": "https://cdn.cebraspe.org.br/concursos/PRF_21/arquivos/578_PRF_001_01.PDF",
+          "url": "https://cdn.cebraspe.org.br/concursos/prf_21/arquivos/ED_1_PRF_2021_ABERTURA.PDF",
           "tipo": "oficial",
-          "descricao": "Banca e caderno da prova objetiva (itens 1 a 120)",
+          "descricao": "Data do edital, quadro de vagas (1.125 + 300 + 75) e conteúdo programático",
           "acessado_em": "2026-11-22"
         },
         {
-          "url": "https://cdn.cebraspe.org.br/concursos/prf_21/arquivos/632_PRF_CF_001_01.PDF",
+          "url": "https://www.cebraspe.org.br/concursos/prf_21",
           "tipo": "oficial",
-          "descricao": "Prova do Curso de Formação",
+          "descricao": "Página do concurso com provas, gabaritos definitivos e editais",
           "acessado_em": "2026-11-22"
         },
         {
@@ -165,19 +212,12 @@
           "tipo": "cursinho",
           "descricao": "Data da prova e do gabarito preliminar",
           "acessado_em": "2026-11-22"
-        },
-        {
-          "url": "https://www.direcaoconcursos.com.br/noticias/concurso-prf/",
-          "tipo": "cursinho",
-          "descricao": "Publicação do edital e número de vagas",
-          "acessado_em": "2026-11-22"
         }
       ],
       "a_verificar": [
-        "datas.edital, datas.prova_objetiva, datas.gabarito_preliminar (só cursinho; conferir no Edital nº 1 e no cronograma oficial)",
-        "cargos[0].vagas.total e a divisão ampla/negros/PcD (conferir no Edital nº 1)",
+        "datas.prova_objetiva e datas.gabarito_preliminar (só cursinho; conferir no cronograma oficial)",
         "situacao (houve suspensão e retomada ligadas à reserva de vagas para negros; homologação não conferida)",
-        "links para Edital nº 1 e gabaritos preliminar e definitivo"
+        "link para o gabarito preliminar (não aparece mais na página oficial)"
       ],
       "atualizado_em": "2026-11-22"
     },
